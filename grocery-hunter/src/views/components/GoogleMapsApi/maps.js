@@ -15,15 +15,15 @@ Geocode.setApiKey(apiKey);
 Geocode.setLanguage("en");
 // Geocode.setRegion("usa");
 
- Geocode.fromAddress(city).then(
-    response => {
-        const {lat, lng } = response.results[0].geometry.location;
-        console.log(lat, lng);
-    },
-    error => {
-        console.error(error);
-    }
-);
+//  Geocode.fromAddress(city).then(
+//     response => {
+//         const {lat, lng } = response.results[0].geometry.location;
+//         console.log(lat, lng);
+//     },
+//     error => {
+//         console.error(error);
+//     }
+// );
 
 class GMap extends Component
 {
@@ -35,24 +35,24 @@ class GMap extends Component
             lat:"",
             long:""
         }
-        this.Geocode.fromAddress(city).then(
-            response => {
-                const {lat, lng } = response.results[0].geometry.location;
-                console.log(lat, lng);
-                this.setState({lat:lat, long:lng})
-            },
-            error => {
-                console.error(error);
-            }
-        );
+        // this.Geocode.fromAddress(city).then(
+        //     response => {
+        //         const {lat, lng } = response.results[0].geometry.location;
+        //         console.log(lat, lng);
+        //         this.setState({lat:lat, long:lng})
+        //     },
+        //     error => {
+        //         console.error(error);
+        //     }
+        // );
     }
-    static default={
-        center:{
-            lat: this.state,lat,
-            lng: this.state.long
-        }, 
-        zoom: 11
-    };
+    // static default={
+    //     center:{
+    //         lat: this.state.lat,
+    //         lng: this.state.long
+    //     }, 
+    //     zoom: 11
+    // };
 
     
 
