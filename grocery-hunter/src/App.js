@@ -11,9 +11,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div style={{height: '50vh', width:'50%'}}>
+        <div style={{height: '50vh', width:'100%'}}>
           <GMap/>
-          <div id="map"></div>
         </div>
       </header>
       
