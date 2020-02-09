@@ -12,25 +12,33 @@ class Search extends React.Component {
         super(props);
 
         this.state={
-            stores: [{}]
+            storesName: [{}],
+            storesLat: [{}],
+            storesLng: [{}]
+
         };
 
         this.searchData = this.searchData.bind(this);
     }
     
     async searchData(){
-        const URL = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyAXBAQhszeNKHiw9L1yrGC_nOCnvfhIcAE&type=grocery_or_supermarket&location=38.962351,-95.255191&radius=1500`;
+        const URL = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyAXBAQhszeNKHiw9L1yrGC_nOCnvfhIcAE&type=grocery_or_supermarket&location=38.962351,-95.255191&radius=20000`;
         try {
             const response = await fetch(URL).then(response => response.json())
             .then(
                 data => 
                 this.setState({
-                    stores: data
+                    storesName: data,
+                    storesLat: data,
+                    storesLng: data
                 })
             );
             // const json = await response.json();
             // console.log('Success',JSON.stringify(json));
-            console.log(this.state.stores);
+            
+            console.log(this.state.storesName);
+            console.log("Here:" ,this.state.storesName);
+
           } catch (error) {
             console.error('Error:', error);
           }
@@ -52,6 +60,7 @@ class Search extends React.Component {
         // console.log("state", this.state.stores);
         // })     
 
+    
     }
     render(){
         return (
