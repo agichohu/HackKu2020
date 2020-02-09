@@ -51,7 +51,16 @@ class GMap extends Component
             //     {latitude: 47.3084488, longitude: -122.2140121},
             //     {latitude: 47.5524695, longitude: -122.0425407}]
         }
+<<<<<<< HEAD
         
+=======
+
+        this.setCity = async (cityName) =>
+        {
+            this.setState({city:cityName})
+        }
+
+>>>>>>> caabad70dda6fb9c566eeca5f906c98a3aaf20b9
         // this.Geocode.fromAddress(city).then(
         //     response => {
         //         const {lat, lng } = response.results[0].geometry.location;
