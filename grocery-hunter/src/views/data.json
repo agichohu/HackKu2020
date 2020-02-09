@@ -1,0 +1,380 @@
+[
+    { 
+    "id": 1,
+    "store": "walmart",
+    "name": "milk",
+    "price": 1.59
+    },
+
+    { 
+    "id": 2,
+    "store": "walmart",
+    "name": "eggs",
+    "price": 0.65
+    },
+        
+        { 
+    "id": 3,
+    "store": "walmart",
+    "name": "banana",
+    "price": 0.25
+    },
+
+    { 
+    "id": 4,
+    "store": "walmart",
+    "name": "apple",
+    "price": 0.99
+    },
+
+        { 
+    "id": 5,
+    "store": "walmart",
+    "name": "bread",
+    "price": 1.43
+    },
+
+    { 
+    "id": 6,
+    "store": "walmart",
+    "name": "orange juice",
+    "price": 2.48
+    },
+
+    { 
+    "id": 7,
+    "store": "walmart",
+    "name": "tomato soup",
+    "price": 0.92
+    },
+
+    { 
+    "id": 8,
+    "store": "walmart",
+    "name": "sugar",
+    "price": 3.76
+    },
+
+    { 
+    "id": 9,
+    "store": "walmart",
+    "name": "flour",
+    "price": 1.18
+    },
+
+    { 
+    "id": 10,
+    "store": "aldi",
+    "name": "milk",
+    "price": 1.75
+    },
+
+    { 
+    "id": 11,
+    "store": "aldi",
+    "name": "eggs",
+    "price": 0.65
+    },
+
+    { 
+    "id": 12,
+    "store": "aldi",
+    "name": "banana",
+    "price": 0.25
+    },
+
+    { 
+    "id": 13,
+    "store": "aldi",
+    "name": "apple",
+    "price": 1.99
+    },
+
+    { 
+    "id": 14,
+    "store": "aldi",
+    "name": "bread",
+    "price": 0.95
+    },
+
+    { 
+    "id": 15,
+    "store": "aldi",
+    "name": "orange juice",
+    "price": 2.45
+    },
+
+    { 
+    "id": 16,
+    "store": "aldi",
+    "name": "tomato soup",
+    "price": 0.55
+    },
+
+    { 
+    "id": 17,
+    "store": "aldi",
+    "name": "sugar",
+    "price": 3.5
+    },
+
+    { 
+    "id": 18,
+    "store": "aldi",
+    "name": "flour",
+    "price": 2.09
+    },
+
+    { 
+    "id": 19,
+    "store": "dillons",
+    "name": "milk",
+    "price": 3.49
+    },
+
+    { 
+    "id": 20,
+    "store": "dillons",
+    "name": "eggs",
+    "price": 1.69
+    },
+
+    { 
+    "id": 21,
+    "store": "dillons",
+    "name": "banana",
+    "price": 0.49
+    },
+
+    { 
+    "id": 22,
+    "store": "dillons",
+    "name": "apple",
+    "price": 2.29
+    },
+
+    { 
+    "id": 23,
+    "store": "dillons",
+    "name": "bread",
+    "price": 1.25
+    },
+
+    { 
+    "id": 24,
+    "store": "dillons",
+    "name": "orange juice",
+    "price": 1.89
+    },
+
+    { 
+    "id": 25,
+    "store": "dillons",
+    "name": "tomato soup",
+    "price": 1.5
+    },
+
+    { 
+    "id": 26,
+    "store": "dillons",
+    "name": "sugar",
+    "price": 4.47
+    },
+
+        { 
+    "id": 27,
+    "store": "dillons",
+    "name": "flour",
+    "price": 2.49
+    },
+
+    { 
+    "id": 28,
+    "store": "target",
+    "name": "milk",
+    "price": 1.59
+    },
+
+    { 
+    "id": 29,
+    "store": "target",
+    "name": "eggs",
+    "price": 1.29
+    },
+
+    { 
+    "id": 30,
+    "store": "target",
+    "name": "banana",
+    "price": 0.29
+    },
+
+    { 
+    "id": 31,
+    "store": "target",
+    "name": "apple",
+    "price": 2.33
+    },
+
+    { 
+    "id": 32,
+    "store": "target",
+    "name": "bread",
+    "price": 1.59
+    },
+
+    { 
+    "id": 33,
+    "store": "target",
+    "name": "orange juice",
+    "price": 2.99
+    },
+
+    { 
+    "id": 34,
+    "store": "target",
+    "name": "tomato soup",
+    "price": 0.99
+    },
+
+    { 
+    "id": 35,
+    "store": "target",
+    "name": "sugar",
+    "price": 3.78
+    },
+
+    { 
+    "id": 36,
+    "store": "target",
+    "name": "flour",
+    "price": 1.99
+    },
+
+    { 
+    "id": 37,
+    "store": "hyvee",
+    "name": "milk",
+    "price": 3.69
+    },
+
+    { 
+    "id": 38,
+    "store": "hyvee",
+    "name": "eggs",
+    "price": 3.49
+    },
+
+    { 
+    "id": 39,
+    "store": "hyvee",
+    "name": "banana",
+    "price": 0.4
+    },
+
+    { 
+    "id": 40,
+    "store": "hyvee",
+    "name": "apple",
+    "price": 0.4
+    },
+
+    { 
+    "id": 41,
+    "store": "hyvee",
+    "name": "bread",
+    "price": 1.99
+    },
+
+    { 
+    "id": 42,
+    "store": "hyvee",
+    "name": "orange juice",
+    "price": 3.69
+    },
+
+    { 
+    "id": 43,
+    "store": "hyvee",
+    "name": "tomato soup",
+    "price": 1.29
+    },
+
+    { 
+    "id": 44,
+    "store": "hyvee",
+    "name": "sugar",
+    "price": 4.99
+    },
+
+    { 
+    "id": 45,
+    "store": "hyvee",
+    "name": "flour",
+    "price": 2.29
+    },
+
+    { 
+    "id": 46,
+    "store": "sprouts",
+    "name": "milk",
+    "price": 2.99
+    },
+
+    { 
+    "id": 47,
+    "store": "sprouts",
+    "name": "eggs",
+    "price": 2.25
+    },
+
+    { 
+    "id": 48,
+    "store": "sprouts",
+    "name": "banana",
+    "price": 0.49
+    },
+
+    { 
+    "id": 49,
+    "store": "sprouts",
+    "name": "apple",
+    "price": 2.49
+    },
+
+    { 
+    "id": 50,
+    "store": "sprouts",
+    "name": "bread",
+    "price": 3.29
+    },
+
+    { 
+    "id": 51,
+    "store": "sprouts",
+    "name": "orange juice",
+    "price": 3.29
+    },
+
+    { 
+    "id": 52,
+    "store": "sprouts",
+    "name": "tomato soup",
+    "price": 2.79
+    },
+
+    { 
+    "id": 53,
+    "store": "sprouts",
+    "name": "sugar",
+    "price": 6.98
+    },
+
+    { 
+    "id": 54,
+    "store": "sprouts",
+    "name": "flour",
+    "price": 2.99
+    }
+
+]
