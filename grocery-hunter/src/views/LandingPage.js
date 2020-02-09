@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap ./components
@@ -52,13 +34,9 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
+                <h2 className="title">Your hunt begins here! </h2>
                 <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                With Grocery Hunter, shopping will never be the same (expensive again). This product will help you find things on your shopping list at nearby stores and at the cheapest rate. It’s simplicity and efficiency will make you come back again and again. Together we can make your grocery hunts inexpensive and more efficient. 
                 </h5>
                 <br />
                 <Button
@@ -82,8 +60,7 @@ function LandingPage() {
                   <div className="description">
                     <h4 className="info-title">Beautiful Gallery</h4>
                     <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
+                      Spend your time looking at these new deals. You do not have to search multiple places
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
@@ -99,8 +76,7 @@ function LandingPage() {
                   <div className="description">
                     <h4 className="info-title">New Ideas</h4>
                     <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                      Fast efficient search
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
@@ -116,8 +92,7 @@ function LandingPage() {
                   <div className="description">
                     <h4 className="info-title">Statistics</h4>
                     <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
+                      Choose from a variety of many groceries
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
@@ -133,8 +108,7 @@ function LandingPage() {
                   <div className="description">
                     <h4 className="info-title">Delightful design</h4>
                     <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
+                      Related items directly from nearby stores
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more

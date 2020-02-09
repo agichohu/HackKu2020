@@ -12,7 +12,7 @@ function DemoFooter() {
             <ul>
               <li>
                 <a
-                  href="#"
+                  href="/home"
                   target="_blank"
                 >
                   TEAM AKA
