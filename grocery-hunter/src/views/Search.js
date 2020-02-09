@@ -4,24 +4,25 @@ import Navbar from "./components/LandingPageNavbar.js";
 import Header from "./components/SearchHeader";
 import { Button, Card, Form, Input, Container, Row , Col , InputGroup, InputGroupAddon} from "reactstrap";
 import {geolocated} from "react-geolocated";
-import Geoloc  from "./Geoloc.js";
-import { pick } from 'reactstrap/lib/utils';
-import jsonData from "./data.json"
+// import { pick } from 'reactstrap/lib/utils';
 // import {cloneDeep} from 'lodash';
-
 class Search extends React.Component {
     constructor(props){
         super(props);
 
         var data = require("./data.json");
         this.state={
-            storesName: data[0],
+            storesName: data,
             storesLat: [{}],
-            storesLng: [{}]
+            storesLng: [{}],
+            input: " "
 
         };
+        this.formUpdate = (event) => {
+            this.setState({ input: event.target.value });
+        }
 
-        // this.searchData = this.searchData.bind(this);
+        this.searchData = this.searchData.bind(this);
     }
     
     // async searchData(){
@@ -45,12 +46,18 @@ class Search extends React.Component {
 
         //   } catch (error) {
         //     console.error('Error:', error);
-        //   }
-    
-        
+        //   }      
     // }
+
+    searchData() {
+        let searchString = this.state.input.toLowerCase();
+        console.log("Search String is ", searchString);
+        var filteredGrocery = this.state.storesName.filter( grocery => grocery.name.toLowerCase().includes(searchString) );
+        console.log("Hi",filteredGrocery);
+    }
     render(){
-        console.log(this.state.storesName)
+        console.log(this.state.storesName);
+        console.log(this.state.input);
         return (
             <>
             <Navbar />
@@ -77,7 +84,7 @@ class Search extends React.Component {
                                 <Col xs="2"></Col>
                                 <Col xs="8">
                                     <InputGroup>
-                                        <Input type="text" />   
+                                        <Input type="text" value={this.state.input} onChange={this.formUpdate} />   
                                         <InputGroupAddon addonType="append">
                                             <Button color="success"onClick={this.searchData}> Search </Button> 
                                         </InputGroupAddon> 
@@ -100,7 +107,7 @@ class Search extends React.Component {
 
                             <Col xs="2"></Col>
                         </Row>
-                        <Geoloc {...this.props} />
+                        {/* <Geoloc {...this.props} /> */}
                         {/* <h1>{this.props.coords.latitude}</h1> */}
                     </Container>
 
