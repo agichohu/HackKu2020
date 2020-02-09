@@ -6,63 +6,51 @@ import { Button, Card, Form, Input, Container, Row , Col , InputGroup, InputGrou
 import {geolocated} from "react-geolocated";
 import Geoloc  from "./Geoloc.js";
 import { pick } from 'reactstrap/lib/utils';
+import jsonData from "./data.json"
+// import {cloneDeep} from 'lodash';
 
 class Search extends React.Component {
     constructor(props){
         super(props);
 
+        var data = require("./data.json");
         this.state={
-            storesName: [{}],
+            storesName: data[0],
             storesLat: [{}],
             storesLng: [{}]
 
         };
 
-        this.searchData = this.searchData.bind(this);
+        // this.searchData = this.searchData.bind(this);
     }
     
-    async searchData(){
-        const URL = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyAXBAQhszeNKHiw9L1yrGC_nOCnvfhIcAE&type=grocery_or_supermarket&location=38.962351,-95.255191&radius=20000`;
-        try {
-            const response = await fetch(URL).then(response => response.json())
-            .then(
-                data => 
-                this.setState({
-                    storesName: data,
-                    storesLat: data,
-                    storesLng: data
-                })
-            );
-            // const json = await response.json();
-            // console.log('Success',JSON.stringify(json));
+    // async searchData(){
+        // const URL = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyAXBAQhszeNKHiw9L1yrGC_nOCnvfhIcAE&type=grocery_or_supermarket&location=38.962351,-95.255191&radius=20000`;
+        // const URL = `./data.json`;
+        // try {
+        //     const response = await fetch(URL).then(response => response.text())
+        //     .then(
+        //         data => 
+        //         this.setState({
+        //             storesName: data,
+        //             storesLat: data,
+        //             storesLng: data
+        //         })
+        //     );
+        //     // const json = await response.json();
+        //     // console.log('Success',JSON.stringify(json));
             
-            console.log(this.state.storesName);
-            console.log("Here:" ,this.state.storesName);
+        //     console.log(this.state.storesName);
+        //     console.log("Here:" ,this.state.storesName);
 
-          } catch (error) {
-            console.error('Error:', error);
-          }
-        // fetch(URL, {mode: 'no-cors'})
-        // .then(results => {
-        //     // return results.json(); 
-        //     results.json();
-        // }).then(data => {
-        //     let stores = data.results.map(store => {
-        //         return (
-        //             <div key={store.id}>
-        //                 <h1>{store.price}</h1>
-        //             </div>
-        //         )
-        //     })
-            
+        //   } catch (error) {
+        //     console.error('Error:', error);
+        //   }
+    
         
-        // this.setState({stores: stores});
-        // console.log("state", this.state.stores);
-        // })     
-
-    
-    }
+    // }
     render(){
+        console.log(this.state.storesName)
         return (
             <>
             <Navbar />
